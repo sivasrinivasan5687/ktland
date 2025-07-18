@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Manrope:wght@300;400;500;600;700&display=swap");
+
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+}
+
+body {
+	font-family: "Manrope", "sans-serif";
+	font-size: 16px;
+	line-height: 30px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Inter", "sans-serif";
+}
+.header-sticky {
+	position: absolute;
+	top: 30px;
+}
+
+.header-sticky .top-bar {
+	display: block;
+}
+
+@media (min-width: 1536px) {
+	.header-sticky .top-bar {
+		display: flex;
+	}
+}
+
+/* hero section */
+.theme-container {
+	max-width: 1330px;
+	padding: 0 20px;
+}
+.shadow-style-one {
+	box-shadow: 0px 10px 60px 0px rgba(121, 74, 255, 0.2);
+}
+
+#hero-mouse-move-anim {
+	position: relative !important;
+}
+#hero-mouse-move-anim .layer:nth-child(1) {
+	position: absolute !important;
+	left: 0 !important;
+	top: 160px !important;
+}
+#hero-mouse-move-anim .layer:nth-child(2) {
+	position: absolute !important;
+	left: 66% !important;
+	top: 128px !important;
+}
+#hero-mouse-move-anim .layer:nth-child(3) {
+	position: absolute !important;
+	left: 0 !important;
+	bottom: 288px !important;
+	top: auto !important;
+}
+#hero-mouse-move-anim .layer:nth-child(4) {
+	position: absolute !important;
+	left: 66% !important;
+	bottom: 256px !important;
+	top: auto !important;
+}
+
+.grid_container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minMax(5%, 1fr));
+	gap: 2px;
+	position: relative;
+	height: 100%;
+}
+
+.grid_item {
+	height: 7vh;
+	border-bottom: 1px solid #e5e7ec6b;
+	border-right: 1px solid #e5e7ec6b;
+	transition: 0.3s ease-in-out;
+	background-color: white;
+	z-index: -1;
+}
+.win_grid {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+.follower {
+	width: 100px;
+	height: 100px;
+	background-color: slateblue;
+	border-radius: 50%;
+	position: absolute;
+	pointer-events: none;
+	transition: transform 0.05s linear;
+	z-index: -2;
+	filter: blur(25px);
+}
+
+@media (max-width: 1200px) {
+	.grid_container {
+		grid-template-columns: repeat(auto-fit, minMax(10%, 1fr));
+	}
+	.grid_item {
+		height: 8vh;
+	}
+}
+
+#home-one-about-mouse-anim .layer:nth-child(1) {
+	position: absolute !important;
+	left: 66.666667% !important;
+	top: 144px !important;
+}
+#home-one-about-mouse-anim .layer:nth-child(2) {
+	position: absolute !important;
+	left: 50% !important;
+	top: auto !important;
+	bottom: 0 !important;
+}
+
+#home-working-cursor-anim {
+	position: relative !important;
+}
+#home-working-cursor-anim .layer:nth-child(1) {
+	position: absolute !important;
+	left: -160px !important;
+	top: 144px !important;
+}
+#home-working-cursor-anim .layer:nth-child(2) {
+	position: absolute !important;
+	left: -56px !important;
+	top: 288px !important;
+}
+#home-working-cursor-anim .layer:nth-child(3) {
+	position: absolute !important;
+	left: -80px !important;
+	top: 460px !important;
+}
+
+.testimoial-section-wrapper .swiper-pagination {
+	position: unset;
+	width: auto;
+}
+.testimoial-section-wrapper .swiper-pagination .swiper-pagination-bullet {
+	width: 7px;
+	height: 7px;
+	background: #fff;
+	opacity: 1;
+}
+.testimoial-section-wrapper .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+	background: #794aff;
+}
+.testimoial-section-wrapper .swiper-button-prev,
+.testimoial-section-wrapper .swiper-button-next {
+	position: unset;
+	margin: 0;
+}
+.swiper-button-prev::after,
+.swiper-button-next::after {
+	content: "";
+}
+.testimoial-section-wrapper .swiper-button-prev::after {
+	content: "";
+}
+.testimoial-section-wrapper .swiper-button-next::after {
+	content: "";
+}
+
+
+#consaltaion-mouse-move-anim .layer:nth-child(2) {
+	position: absolute !important;
+	left: 208px !important;
+	top: 80px !important;
+}
+#consaltaion-mouse-move-anim .layer:nth-child(3) {
+	position: absolute !important;
+	left: auto !important;
+	right: 160px !important;
+	top: auto !important;
+}
+
+/*=================================responsive=====================================*/
+@media (max-width: 768px) {
+	#consaltaion-mouse-move-anim .layer:nth-child(2) {
+		position: absolute !important;
+		left: 0 !important;
+		top: 80px !important;
+	}
+	#consaltaion-mouse-move-anim .layer:nth-child(3) {
+		position: absolute !important;
+		left: auto !important;
+		right: 0 !important;
+		top: auto !important;
+	}
+}
